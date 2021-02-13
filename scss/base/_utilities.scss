@@ -1,0 +1,22 @@
+.container {
+  max-width: 70rem;
+  padding: 0 2em; /* 2em of padding from both sides */
+  margin: 0 auto; /*this is for max size*/
+}
+
+/* margin for ratings */
+.flow-content > * + * {
+  margin-top: var(--flow-space, 1rem);
+} /*Creamos una variable para poder cambiar el codigo. 1rem es el valor default */
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  @media (min-width: 50em) {
+  flex-direction: row;
+  }
+}
+
+.a-center {
+  align-items: center;
+}

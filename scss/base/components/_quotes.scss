@@ -1,0 +1,44 @@
+.quotes {
+  --spacer: 2rem; /* local scoping */
+
+  li {
+    &:nth-child(2) {
+      transform: translateY(3rem);
+    }
+    &:nth-child(3) {
+      transform: translateY(6rem);
+    }
+  }
+
+  blockquote {
+    background: var(--clr-primary-700);
+    color: var(--clr-neutral-300);
+    color: white;
+    text-align: left;
+    border-radius: var(--br);
+    padding: var(--spacer);
+    max-width: 25rem;
+    margin: 0 auto;
+    height: 100%;
+  }
+  /* ya pusimos en utilities el display flex a .split */
+  img {
+    width: 3rem;
+    border-radius: 50%;
+    @media (min-width: 50em) {
+      margin-right: var(--spacer);
+    }
+  }
+
+  .name {
+    font-weight: 700;
+  }
+
+  .status {
+    color: var(--clr-primary-300);
+  }
+
+  .quote {
+    margin-top: var(--spacer);
+  }
+}
